@@ -1,0 +1,175 @@
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  height: 80%;
+  max-height: 80%;
+  top: 20%;
+  margin: auto;
+}
+
+.channels {
+  position: relative;
+  padding: 0;
+  height: 100%;
+  border: 0.5px ridge black;
+  border-radius: 5px 5px 5px 5px;
+  z-index: 2;
+}
+
+.channel-title {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0;
+  border-bottom: 0.5px ridge black;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.discussion {
+  height: 100%;
+  overflow: scroll;
+}
+
+.comments-main {
+  height: 100%;
+  position: relative;
+  padding-bottom: 50px;
+  background: #FFF;
+}
+
+.comment-box-main {
+  background: #282828;
+  position: absolute;
+  bottom: 0;
+}
+
+.comment time,
+.response time,
+.comment:hover time,
+.response:hover time,
+.icon-rocknroll,
+.like-count {
+  -webkit-transition: .25s opacity linear;
+  transition: .25s opacity linear;
+}
+
+.comments-main ul li {
+  list-style: none;
+}
+
+.comments .comment {
+  padding: 5px 10px;
+  background: #00AF90;
+}
+
+.response {
+  padding: 5px 10px;
+  background: #041c6d;
+  &:hover {
+    -webkit-transition: .25s opacity linear;
+    transition: .25s opacity linear;
+  }
+}
+
+.comments .comment:hover time,
+.comments .response:hover time {
+  opacity: 1;
+}
+
+.comments .user-img img {
+  width: 50px;
+  height: 50px;
+}
+
+.comments .comment h4,
+.comments .response h4 {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.comments .comment h4 a {
+  color: #404040;
+  text-decoration: none;
+}
+
+.comments .response h4 a {
+  color: #00AF90;
+  text-decoration: none;
+}
+
+.comments .comment .icon-rocknroll,
+.comments .response .icon-rocknroll {
+  color: #545454;
+  font-size: .85rem;
+}
+
+.comments .comment .icon-rocknroll:hover,
+.comments .response .icon-rocknroll:hover {
+  opacity: .5;
+}
+
+.comments .comment time,
+.comments .response time,
+.comments .comment .like-count,
+.comments .response .like-count,
+.comments .comment .icon-rocknroll,
+.comments .response .icon-rocknroll {
+  font-size: .75rem;
+  opacity: 0;
+}
+
+.comments .comment time,
+.comments .response time,
+.comments .comment .like-count,
+.comments .response .like-count {
+  font-weight: 300;
+}
+
+.comments .comment p,
+.comments .response p {
+  font-size: 13px;
+}
+
+.comments .comment p .reply,
+.comments .response p .reply{
+  color: #BFBFA8;
+  cursor: pointer;
+}
+
+.comments .comment .active,
+.comments .response .active {
+  opacity: 1;
+}
+
+.icon-rocknroll {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 .125rem 0 0;
+}
+
+.comments .comment:hover .icon-rocknroll,
+.comments .response:hover .icon-rocknroll,
+.comments .comment:hover .like-count,
+.comments .response:hover .like-count {
+  opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .comments .comment h4,
+  .comments .response h4 {
+    font-size: 12px;
+  }
+
+  .comments .comment p,
+  .comments .response p {
+    font-size: 11px;
+  }
+
+  .comment-box-main .send-btn button {
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,30 @@
+.container-fluid {
+  padding-left: 0;
+}
+
+.back-arrow {
+  height: 100%;
+  padding-right: 12px;
+  border-right: 3px ridge black;
+  border-left: 3px ridge black;
+  border-top: 3px ridge black;
+  border-bottom: 3px ridge black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.navbar {
+  background-color: white;
+  padding: 0;
+  color: black;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.container-fluid {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}

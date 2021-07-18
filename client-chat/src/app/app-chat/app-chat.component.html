@@ -1,0 +1,48 @@
+<app-navbar-chat></app-navbar-chat>
+<div class="container row">
+  <div class="col-md-3 col-3 channels">
+    <div class="channel-title">
+      <h4>Users</h4>
+    </div>
+    <ul class="p-0 list-group">
+      <li class="list-group-item" *ngFor="let user of users">
+        <div class="row channel mb-2">
+          <p>{{ user }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <div class="
+        col-md-6
+        col-sm-6
+        col-6
+        comments-main
+        pt-4
+        rounded
+      ">
+      <ul class="p-0 discussion" #scrollDiscussion>
+        <li *ngFor="let message of discussion">
+          <div class="row comments mb-2">
+            <div class="col-md-2 col-sm-2 col-3 text-center user-img">
+              <img id="profile-photo" src="http://nicesnippets.com/demo/man01.png" class="rounded-circle" />
+            </div>
+            <div [class]="message.author === pseudo ? ownMessage : otherMessage">
+              <h4 class="m-0"><a href="#">{{ message.author }}</a></h4>
+              <time class="text-white ml-3">1 hours ago</time>
+              <p class="mb-0 text-white">
+                {{ message.message }}
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="row comment-box-main col-12 p-3 rounded-bottom">
+        <div class="col-md-9 col-sm-9 col-9 pr-0 comment-box">
+          <input type="text" class="form-control" placeholder="comment ...." [(ngModel)]="message"/>
+        </div>
+        <div class="col-md-3 col-sm-2 col-2 pl-0 text-center send-btn">
+          <button class="btn btn-info" (click)="onSend()">Send</button>
+        </div>
+      </div>
+    </div>
+</div>

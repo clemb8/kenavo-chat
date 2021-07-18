@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Pick your name :</h1>
+<div mat-dialog-content>
+  <div class="row">
+    <div class="col">
+      <mat-form-field>
+        <input class="input" matInput type="text" placeholder="Your pseudo"  [(ngModel)]="data.pseudo"(keyup)="onKeyUp()">
+      </mat-form-field>
+      <button class="button" *ngIf="pseudo_validated" mat-raised-button [mat-dialog-close]="data.pseudo">Save</button>
+    </div>
+  </div>
+</div>
