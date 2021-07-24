@@ -17,6 +17,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PseudoModalComponent } from './pseudo-modal/pseudo-modal.component';
 import { NavbarChatComponent } from './navbar-chat/navbar-chat.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NavbarChatComponent } from './navbar-chat/navbar-chat.component';
     HomeComponent,
     AppChatComponent,
     PseudoModalComponent,
-    NavbarChatComponent
+    NavbarChatComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -9,10 +9,21 @@ li {
   list-style: none;
 }
 
+app-footer {
+  display: block;
+  width: 100% !important;
+}
+
+.home-section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .rust-section {
   background-color: black;
   color: white;
-  padding: 10px;
   padding-left: 35px;
 }
 
