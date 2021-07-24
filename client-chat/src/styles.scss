@@ -62,7 +62,7 @@ hr.light {
 }
 
 a {
-    color: #9c27b0;
+    color: #bab8bb;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -70,7 +70,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #9c27c1;
+    color: #5203d1;
     outline: 0;
 }
 
@@ -78,10 +78,21 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
 }
 
+h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+h5 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
 p {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.7;
     margin-bottom: 20px;
+    font-family: 'Helvetica Neue';
 }
 
 .wide-space {
