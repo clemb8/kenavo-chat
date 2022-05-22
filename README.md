@@ -11,7 +11,7 @@ To run this server application locally you need :
   - `cargo watch -x run`
 
 If you to develop on the client side while serving it with the Rust/Actix server :
-    - Easiest way is to get the Angular CLI : `npm install -g @angular/cli` ;
-    - `cd client-chat`
-    - `npm install`
-    - `npm run watch`
+   - Easiest way is to get the Angular CLI : `npm install -g @angular/cli` ;
+   - `cd client-chat`
+   - `npm install`
+   - `npm run watch`
